@@ -1,0 +1,10 @@
+.card-appear {
+  animation: card-appear 0.5s 0.2s forwards;
+}
+
+@keyframes card-appear {
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
