@@ -1,11 +1,11 @@
-const fetchStatus = {
+export const fetchStatus = {
   LOADING: 'loading',
   SUCCESS: 'success',
   FAILURE: 'failure',
   CONFLICT_FAILURE: 'conflict_failure'
 };
 
-const getSendRequestBtnStatus = (status) => {
+export const getSendRequestBtnStatus = (status) => {
   if(status === undefined) {
     return 'none';
   } else if (status === fetchStatus.LOADING) {
@@ -19,15 +19,9 @@ const getSendRequestBtnStatus = (status) => {
   }
 }
 
-const getDateRangeText = (startDate, endDate) => {
+export const getDateRangeText = (startDate, endDate) => {
   if(startDate.year === endDate.year && startDate.month === endDate.month && startDate.day === endDate.day) {
     return `${startDate.year}.${startDate.month}.${startDate.day}`;
   }
   return `${startDate.year}.${startDate.month}.${startDate.day} ~ ${endDate.year}.${endDate.month}.${endDate.day}`;
-};
-
-export {
-  fetchStatus,
-  getSendRequestBtnStatus,
-  getDateRangeText
 };

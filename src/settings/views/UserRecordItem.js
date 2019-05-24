@@ -4,22 +4,24 @@ import './userRecordItem.css';
 
 const UserRecordItem = (props) => {
   return (
-    <div className="col-md-3 col-sm-6" style={{
+    <div className="col-lg-3 col-md-6 my-2" style={{
       width: '100%',
       height: '200px',
       overflow: 'hidden'
     }}>
-      <div className="slide-up rounded bg-danger text-white">
+      <div className={`${props.dir} slide rounded bg-danger text-white`} style={{
+        animation: `slide 0.5s ${props.delay}s forwards`
+      }}>
         <h4 className="p-4" style={{
           width: '100%',
-          height: '120px',
+          height: '100px',
           textAlign: 'left'
         }}>
           { props.title }
         </h4>
         <div className="p-4 lead" style={{
           width: '100%',
-          height: '80px',
+          height: '100px',
           textAlign: 'right'
         }}>
           { props.text }
