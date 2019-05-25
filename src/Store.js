@@ -5,12 +5,14 @@ import { reducer as authReducer, defaultState as initialUserInfo } from './auth'
 import { reducer as nowReducer, defaultState as initialMoodContent } from './now';
 import { reducer as moodDataReducer, defaultState as initialMoodData } from './past/moodData';
 import { reducer as moodCardReducer, defaultState as initialMoodCard } from './past/moodCard';
+import { reducer as userRecordReducer } from './settings/userRecord';
 
 const reducer = combineReducers({
   userInfo: authReducer,
   nowMoodContent: nowReducer,
   moodData: moodDataReducer,
-  moodCard: moodCardReducer
+  moodCard: moodCardReducer,
+  userRecord: userRecordReducer
 });
 
 const initialState = {

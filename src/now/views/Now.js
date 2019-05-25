@@ -21,7 +21,7 @@ class Now extends React.Component {
   getCustomizeMoodNameAndAddMoodBtn = () => {
     const customizeMood = this.refs.customizeMood;
     const customizeMoodName = customizeMood.value;
-    if(!customizeMoodName.trim()) {
+    if(!customizeMoodName.trim() || this.props.moodNames.indexOf(customizeMoodName) > -1) {
       return;
     }
 

@@ -10,14 +10,9 @@ import Card from './Card';
 import DateRangePicker from '../../../components/DateRangePicker';
 import SendRequestBtn from '../../../components/SendRequestBtn';
 import NullContent from '../../../components/NullContent';
+import BlockLoadingSpinner from '../../../components/BlockLoadingSpinner';
 
 import { fetchStatus, getSendRequestBtnStatus } from '../../../utils/otherUtil';
-
-const loadingSpinner = 
-<div className="py-4" style={{ textAlign: 'center', width: '100%' }}>
-  <span className="spinner-border spinner-border-bg text-danger" role="status" aria-hidden="true"></span>
-  <span className="sr-only">Loading...</span>
-</div>;
 
 class MoodCard extends React.Component {
   constructor(props) {
@@ -152,7 +147,7 @@ class MoodCard extends React.Component {
             ) || 
             (
               this.props.submitSettingsStatus === fetchStatus.LOADING 
-              ? loadingSpinner
+              ? <BlockLoadingSpinner />
               : <NullContent text="没找到符合条件的心情" />
             )
           }
@@ -166,7 +161,7 @@ const mapStateToProps = state => {
   return {
     moodDateRangeText: state.moodCard.moodDateRangeText,
     toggleBtnText: state.moodCard.toggleBtnText,
-    moodNames: [...state.userInfo.usedMoodNames, ...state.nowMoodContent.addMoodNames],
+    moodNames: [...new Set([...state.userInfo.usedMoodNames, ...state.nowMoodContent.usedMoodNames])],
     moodSelections: state.moodCard.moodSelections,
     moods: state.moodCard.moods,
     username: state.userInfo.username,

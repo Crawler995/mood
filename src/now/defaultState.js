@@ -1,5 +1,5 @@
 const initialMoodContent = {
-  addMoodNames: []
+  usedMoodNames: []
 };
 
 export default initialMoodContent;

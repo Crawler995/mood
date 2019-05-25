@@ -34,8 +34,7 @@ export default (state = {}, action) => {
       return {
         ...state,
         moodNames: [...state.moodNames, action.moodName],
-        moodSelections: [...state.moodSelections, true],
-        addMoodNames: [...state.addMoodNames, action.moodName]
+        moodSelections: [...state.moodSelections, true]
       };
     }
 
@@ -50,7 +49,8 @@ export default (state = {}, action) => {
       return {
         ...state,
         moodSelections: state.moodSelections.map(item => false),
-        submitMoodContentStatus: fetchStatus.SUCCESS
+        submitMoodContentStatus: fetchStatus.SUCCESS,
+        usedMoodNames: [...state.addMoodNames, action.selectMoods]
       }
     }
 

@@ -40,7 +40,7 @@ export const submitMoodContent = (username, selectMoods, moodDescription) => {
     })
     .then(res => {
       moodDescription.value = '';
-      dispatch(submitMoodContentFetchSuccess(res));
+      dispatch(submitMoodContentFetchSuccess(res, selectMoods));
     })
     .catch(err => {
       dispatch(submitMoodContentFetchFailure(err));
@@ -52,9 +52,10 @@ export const submitMoodContentFetchStarted = () => ({
   type: SUBMIT_MOOD_CONTENT_FETCH_STARTED
 });
 
-export const submitMoodContentFetchSuccess = (result) => ({
+export const submitMoodContentFetchSuccess = (result, selectMoods) => ({
   type: SUBMIT_MOOD_CONTENT_FETCH_SUCCESS,
-  result
+  result,
+  selectMoods
 });
 
 export const submitMoodContentFetchFailure = (error) => ({

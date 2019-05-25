@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../../components/Header';
 import SectionTitle from '../../components/SectionTitle';
-import UserRecord from './UserRecord';
+import { view as UserRecord } from '../userRecord';
 
 export default class Settings extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export default class Settings extends React.Component {
 
         <div>
           <div className="container py-5 px-4">
-            <SectionTitle text="这里是你的私密港湾" />
+            <SectionTitle text="你的心情足迹" />
             <UserRecord />
           </div>
         </div>
