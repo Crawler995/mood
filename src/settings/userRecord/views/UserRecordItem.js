@@ -6,7 +6,7 @@ const UserRecordItem = (props) => {
   return (
     <div className="col-lg-3 col-md-6 my-2" style={{
       width: '100%',
-      height: '200px',
+      height: '160px',
       overflow: 'hidden'
     }}>
       <div className={`${props.dir} slide rounded bg-danger text-white`} style={{
@@ -14,14 +14,14 @@ const UserRecordItem = (props) => {
       }}>
         <h4 className="p-4" style={{
           width: '100%',
-          height: '100px',
+          height: '90px',
           textAlign: 'left'
         }}>
           { props.title }
         </h4>
-        <div className="p-4 lead" style={{
+        <div className="pr-4 lead" style={{
           width: '100%',
-          height: '100px',
+          height: '70px',
           textAlign: 'right'
         }}>
           { props.text }

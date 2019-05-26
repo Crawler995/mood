@@ -45,7 +45,7 @@ class UserRecord extends React.Component {
                 title={title}
                 text={this.texts[index]}
                 dir={index % 2 === 0 ? 'slide-up' : 'slide-down'}
-                delay={0.5 + index * 0.2}
+                delay={0.2 + index * 0.2}
               />
             )
           ) || <BlockLoadingSpinner />
