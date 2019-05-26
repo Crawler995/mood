@@ -50,7 +50,7 @@ export default (state = {}, action) => {
         ...state,
         moodSelections: state.moodSelections.map(item => false),
         submitMoodContentStatus: fetchStatus.SUCCESS,
-        usedMoodNames: [...state.addMoodNames, action.selectMoods]
+        usedMoodNames: [...action.selectMoods]
       }
     }
 
