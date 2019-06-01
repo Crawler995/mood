@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../../components/Header';
+import { view as UserRecord } from '../userRecord';
 import { view as MoodData } from '../moodData';
 import { view as MoodCard } from '../moodCard';
 
@@ -15,6 +16,7 @@ export default class Past extends React.Component {
 
         <div>
           <div className="container py-5 px-4">
+            <UserRecord />
             <MoodData />
             <MoodCard />
           </div>

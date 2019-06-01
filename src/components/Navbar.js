@@ -6,7 +6,9 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-danger">
-        <span className="navbar-brand">Mood</span>
+        <span className="navbar-brand">
+          Mood
+        </span>
         <span className="navbar-text">你的喜怒哀乐。</span>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapsibleNavbar">
@@ -14,7 +16,7 @@ class Navbar extends React.Component {
         </button>
 
         <div className="collapse navbar-collapse collapsibleNavbar justify-content-end"> 
-          <ul className="navbar-nav">
+          <ul className="navbar-nav pr-3">
             <li className="nav-item">
               <Link className="nav-link" to="/past">过去</Link>
             </li>
@@ -24,10 +26,8 @@ class Navbar extends React.Component {
             <li className="nav-item">
               <Link className="nav-link" to="/future">未来</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/settings">{ this.props.username }</Link>
-            </li>
           </ul>
+          <span className="navbar-text">{ this.props.username }</span>
         </div>
       </nav>
     );
