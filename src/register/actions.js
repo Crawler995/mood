@@ -10,7 +10,7 @@ import axios from 'axios';
 
 export const submitRegisterUserInfo = (username, password) => {
   return (dispatch) => {
-    const submitRegisterUserInfoUrl = 'users';
+    const submitRegisterUserInfoUrl = '/api/users';
 
     dispatch(submitRegisterUserInfoFetchStarted());
 

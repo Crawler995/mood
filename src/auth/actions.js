@@ -16,7 +16,7 @@ import axios from 'axios';
 
 export const authByJWT = () => {
   return (dispatch) => {
-    const authByJWTUrl = 'users/auth';
+    const authByJWTUrl = '/api/users/auth';
 
     dispatch(authByJWTFetchStarted());
 
@@ -51,7 +51,7 @@ export const authByJWTFetchFailure = (error) => ({
 
 export const authByUserInfo = (username, password) => {
   return (dispatch) => {
-    const authByUserInfoUrl = 'users/login';
+    const authByUserInfoUrl = '/api/users/login';
 
     dispatch(authByUserInfoFetchStarted());
 
@@ -91,7 +91,7 @@ export const toggleAuthMode = () => ({
 
 export const submitRegisterUserInfo = (username, password) => {
   return (dispatch) => {
-    const submitRegisterUserInfoUrl = 'users';
+    const submitRegisterUserInfoUrl = '/api/users';
 
     dispatch(submitRegisterUserInfoFetchStarted());
 

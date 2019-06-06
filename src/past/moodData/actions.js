@@ -14,7 +14,7 @@ export const toggleSettings = () => ({
 
 export const submitSettings = (startDate, endDate, username) => {
   return (dispatch) => {
-    const submitSettingsUrl = `/users/${username}/moods/data`;
+    const submitSettingsUrl = `/api/users/${username}/moods/data`;
 
     dispatch(submitSettingsStarted());
 

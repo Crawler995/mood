@@ -26,7 +26,7 @@ export const addMoodBtn = (moodName) => ({
 
 export const submitMoodContent = (username, selectMoods, moodDescription) => {
   return (dispatch) => {
-    const submitMoodContentUrl = `/users/${username}/moods`;
+    const submitMoodContentUrl = `/api/users/${username}/moods`;
 
     dispatch(submitMoodContentFetchStarted());
 

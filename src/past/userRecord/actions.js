@@ -8,7 +8,7 @@ import {
   
   export const getUserRecord = (username) => {
     return (dispatch) => {
-      const getUserRecordUrl = `/users/${username}/record`;
+      const getUserRecordUrl = `/api/users/${username}/record`;
   
       dispatch(getUserRecordFetchStarted());
   
