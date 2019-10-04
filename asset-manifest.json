@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mood-release/static/css/main.0a5cec9b.chunk.css",
-    "main.js": "/mood-release/static/js/main.b2731348.chunk.js",
-    "main.js.map": "/mood-release/static/js/main.b2731348.chunk.js.map",
-    "runtime~main.js": "/mood-release/static/js/runtime~main.1bdbea23.js",
-    "runtime~main.js.map": "/mood-release/static/js/runtime~main.1bdbea23.js.map",
-    "static/js/2.8c1007f6.chunk.js": "/mood-release/static/js/2.8c1007f6.chunk.js",
-    "static/js/2.8c1007f6.chunk.js.map": "/mood-release/static/js/2.8c1007f6.chunk.js.map",
-    "index.html": "/mood-release/index.html",
-    "precache-manifest.1d509406856bc9960182d9674d73e85b.js": "/mood-release/precache-manifest.1d509406856bc9960182d9674d73e85b.js",
-    "service-worker.js": "/mood-release/service-worker.js",
-    "static/css/main.0a5cec9b.chunk.css.map": "/mood-release/static/css/main.0a5cec9b.chunk.css.map"
+    "main.css": "/mood/static/css/main.0a5cec9b.chunk.css",
+    "main.js": "/mood/static/js/main.97051ebf.chunk.js",
+    "main.js.map": "/mood/static/js/main.97051ebf.chunk.js.map",
+    "runtime~main.js": "/mood/static/js/runtime~main.8989a9f1.js",
+    "runtime~main.js.map": "/mood/static/js/runtime~main.8989a9f1.js.map",
+    "static/js/2.8c1007f6.chunk.js": "/mood/static/js/2.8c1007f6.chunk.js",
+    "static/js/2.8c1007f6.chunk.js.map": "/mood/static/js/2.8c1007f6.chunk.js.map",
+    "index.html": "/mood/index.html",
+    "precache-manifest.f999059132e7698c4ce48a6e1e384ffe.js": "/mood/precache-manifest.f999059132e7698c4ce48a6e1e384ffe.js",
+    "service-worker.js": "/mood/service-worker.js",
+    "static/css/main.0a5cec9b.chunk.css.map": "/mood/static/css/main.0a5cec9b.chunk.css.map"
   }
 }
